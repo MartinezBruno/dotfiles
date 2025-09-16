@@ -1,0 +1,181 @@
+[
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      // VS Code conversion: jj to escape
+      "j j": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "s h": "workspace::ActivatePaneLeft"
+    }
+  },
+  {
+    "context": "Workspace",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-w p": "agent::ToggleFocus",
+      "ctrl-w o": "project_panel::ToggleFocus",
+
+      // VS Code conversions
+      "alt-a": "terminal_panel::ToggleFocus", // VS Code: toggle terminal
+      "alt-t": "tab_switcher::Toggle", // VS Code: toggle tabs visibility
+      "ctrl-shift-e": "project_panel::ToggleFocus", // VS Code: explorer
+      "ctrl-n": "project_panel::NewFile", // VS Code: new file in explorer
+
+      // VS Code leader key conversions
+      // "alt-t": "workspace::ToggleRightDock", // VS Code: toggle sidebar
+      "alt-e": "workspace::ToggleRightDock", // VS Code: toggle sidebar
+      "alt-s": "workspace::ToggleBottomDock", // VS Code: toggle status bar (closest equivalent)
+      "alt-g": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "(VimControl || (!Editor && !Terminal))",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-w i": "terminal_panel::ToggleFocus",
+      "ctrl-w p": "agent::ToggleFocus",
+      "ctrl-w o": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "g s": "outline::Toggle",
+      "g i": "editor::ToggleCodeActions",
+      "g d": "editor::OpenExcerpts",
+      "g c": ["editor::ToggleComments", { "advance_downwards": false }],
+
+      // VS Code conversion: gh for hover/definition preview
+      "g h": "editor::Hover"
+    }
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "g l": "vim::SelectNext",
+      "g L": "vim::SelectPrevious",
+      "g a": "editor::SelectAllMatches",
+      "g A": "editor::FindAllReferences",
+      "g f": "project_symbols::Toggle",
+      "space p e": "diagnostics::Deploy",
+
+      // VS Code conversions for tab navigation
+      "tab": "pane::ActivateNextItem", // VS Code: next editor
+      "shift-tab": "pane::ActivatePreviousItem", // VS Code: previous editor
+
+      // VS Code conversions for folding
+      "alt-c": "editor::Fold", // VS Code: toggle fold
+      "alt-v": "editor::UnfoldAll", // VS Code: unfold all
+
+      // VS Code conversion: alt+d for add selection to next find match
+      "alt-d": "editor::SelectNext"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      // Your existing bindings
+      "space m p": "markdown::OpenPreview",
+      "space m P": "markdown::OpenPreviewToTheSide",
+      "space g h d": "editor::ToggleSelectedDiffHunks",
+      "space g h r": "git::Restore",
+
+      // "space n": "editor::ClearHighlights", // VS Code: :nohl
+      "space w": "workspace::Save", // VS Code: save file
+      "space q": "pane::CloseActiveItem", // VS Code: :q
+      "space v": "pane::SplitRight", // VS Code: split editor
+      "space f": "buffer_search::Deploy", // VS Code: search in file (/)
+      "space j": "editor::MoveToEnd", // VS Code: go to end (G)
+      "space k": "editor::MoveToBeginning" // VS Code: go to beginning (gg)
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // Your existing bindings
+      "space e": "editor::Hover",
+      "s v": "pane::SplitRight",
+      "s s": "pane::SplitDown",
+      "s l": "workspace::ActivatePaneRight",
+      "s h": "workspace::ActivatePaneLeft",
+      "s k": "workspace::ActivatePaneUp",
+      "s j": "workspace::ActivatePaneDown",
+      "space h": "pane::ActivatePreviousItem",
+      "space l": "pane::ActivateNextItem",
+      "space c": "pane::CloseActiveItem",
+      "space p f": "file_finder::Toggle",
+      "space p s": "pane::DeploySearch",
+      // "space f": "editor::Format",
+      "space m": "tab_switcher::Toggle",
+      "ctrl-w l": "workspace::ToggleRightDock",
+      "ctrl-w h": "workspace::ToggleLeftDock",
+      "ctrl-w j": "workspace::ToggleBottomDock",
+      "] e": "editor::GoToDiagnostic",
+      "[ e": "editor::GoToPreviousDiagnostic",
+      "] h": "editor::GoToHunk",
+      "[ h": "editor::GoToPreviousHunk"
+    }
+  },
+  {
+    "context": "Terminal",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-w k": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "space p f": "file_finder::Toggle",
+      "space f p": "projects::OpenRecent",
+      "ctrl-w l": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      "g c": "editor::ToggleComments",
+
+      // VS Code leader key conversion for visual mode
+      "space d": "editor::Delete" // VS Code: leader d for delete
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift-s": ["vim::PushAddSurrounds", {}]
+    }
+  },
+  {
+    // Hover-specific bindings from VS Code
+    "context": "Editor && showing_hover",
+    "bindings": {
+      "h": "editor::MoveLeft",
+      "j": "editor::MoveDown",
+      "k": "editor::MoveUp",
+      "l": "editor::MoveRight"
+    }
+  },
+  {
+    // Autocomplete/suggestion navigation from VS Code
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "tab": "editor::ContextMenuNext"
+      // "shift-tab": "editor::ContextMenuPrev"
+    }
+  },
+  {
+    // Global bindings that work everywhere
+    "context": "Global",
+    "bindings": {
+      // VS Code conversions
+      "alt-q": "command_palette::Toggle", // VS Code: wrap with abbreviation (closest equivalent)
+      "ctrl-shift-/": "pane::DeploySearch", // VS Code: quick text search
+      "shift-enter": "assistant::Assist" // VS Code: copilot generate (using Zed's assistant)
+    }
+  }
+]
