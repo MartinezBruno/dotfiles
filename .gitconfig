@@ -7,7 +7,7 @@ path = ~/.gitconfig.personal
 [includeIf "gitdir:~/workspace/work/"] # work configuration for all projects in Work/
 path = ~/.gitconfig.work
 
-[includeIf "gitdir:~/workspace/work/boundary"] # work configuration for all projects in Work/
+[includeIf "gitdir:~/workspace/work/boundary/"] # work configuration for all projects in Work/
 path = ~/.gitconfig.work2
 
 [core]
