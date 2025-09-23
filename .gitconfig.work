@@ -1,0 +1,9 @@
+[user]
+email = bruno@dango.digital
+name = Bruno Martinez
+
+[github]
+user = "BrunoM02"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/brunom02"

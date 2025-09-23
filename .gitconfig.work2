@@ -1,0 +1,9 @@
+[user]
+email = bruno@boundaryla.com
+name = Bruno Martinez
+
+[github]
+user = "BrunoM04"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/brunom04"

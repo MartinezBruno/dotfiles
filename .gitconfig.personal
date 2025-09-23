@@ -1,0 +1,9 @@
+[user]
+email = bmartinez.fullstack@gmail.com
+name = Bruno Martinez
+
+[github]
+user = "MartinezBruno"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/martinezbruno"
