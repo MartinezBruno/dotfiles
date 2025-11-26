@@ -20,13 +20,13 @@
   "icon_theme": "Bearded Icon Theme",
   "vim_mode": true,
   "ui_font_family": "GitLab Mono",
-  "ui_font_size": 16,
+  "ui_font_size": 17.8,
   "buffer_font_family": "GitLab Mono",
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Rosé Pine Moon"
+    "dark": "Gruvbox Dark Hard"
   },
   "relative_line_numbers": true,
   "scroll_beyond_last_line": "vertical_scroll_margin",
