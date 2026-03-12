@@ -1,5 +1,6 @@
 ## Repository-Specific Instructions
 - **ALWAYS check for CLAUDE.md file in the current project directory**
+- **ALWAYS check for AGENTS.md file in the home dir**
 - If project CLAUDE.md exists (or local version as CLAUDE.local.md), follow those instructions in addition to these global ones
 - Project-specific instructions take precedence over global ones
 
@@ -42,46 +43,7 @@ refactor(api): simplify user service
 test(calc): add completion message
 style(components): fix indentation
 
-# Git Flow Instructions
-
-This project uses Git Flow workflow with the **git-flow extension**.
-
-## Setup
-- Verify git-flow is initialized: `git flow init`
-- Use git-flow extension commands for all operations
-
-## Git Flow Commands
-- **Features:**
-  - Start: `git flow feature start <name>`
-  - Finish: `git flow feature finish <name>`
-  - Publish: `git flow feature publish <name>`
-
-- **Releases:**
-  - Start: `git flow release start <version>`
-  - Finish: `git flow release finish <version>`
-
-- **Hotfixes:**
-  - Start: `git flow hotfix start <version>`
-  - Finish: `git flow hotfix finish <version>`
-
-## Branch Naming Process
-- **ALWAYS ask user to confirm branch name before creating**
-- Propose a descriptive name based on the task/feature
-- Wait for user approval or modification before executing git-flow commands
-- Use kebab-case for branch names (e.g., user-authentication, fix-login-bug)
-
-## Workflow Rules
-1. **Always use git-flow commands** instead of manual git operations
-2. Features branch from develop, merge back to develop
-3. Releases branch from develop, merge to main and develop
-4. Hotfixes branch from main, merge to main and develop
-5. Use descriptive names for features/releases/hotfixes
-
-## Branch Analysis
-Check current branch and suggest appropriate git-flow actions:
-- On feature branch: suggest `git flow feature finish`
-- On develop: suggest `git flow feature start` or `git flow release start`
-- On main: suggest `git flow hotfix start`
+---
 
 Claude Code Commands
 Claude Code handles naming automatically
@@ -93,6 +55,7 @@ claude "create a feature for user login system"
 claude "commit these changes"
 → Analyzes changes
 → Do not adds Claude as co-author
+→ run `/security-review` command to check vulnerabilities on current changes
 → Proposes: feat(auth): add user login validation
 → Waits for your confirmation
 

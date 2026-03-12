@@ -10,78 +10,78 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4"
-    }
+      "model": "claude-sonnet-4",
+    },
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "tab_size": 2,
-  "icon_theme": "Bearded Icon Theme",
+  "icon_theme": "Catppuccin Latte",
   "vim_mode": true,
   "ui_font_family": "GitLab Mono",
   "ui_font_size": 17.8,
   "buffer_font_family": "GitLab Mono",
   "buffer_font_size": 15,
   "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Gruvbox Dark Hard"
+    "mode": "dark",
+    "light": "Gruvbox Light Hard",
+    "dark": "Claude Code Inspired Dark",
   },
-  "relative_line_numbers": true,
+  "relative_line_numbers": "wrapped",
   "scroll_beyond_last_line": "vertical_scroll_margin",
 
   "lsp_document_colors": "inlay",
   "inline_code_actions": false,
   "minimap": {
-    "show": "never"
+    "show": "never",
   },
   "search": {
     "button": false,
-    "case_sensitive": true
+    "case_sensitive": true,
   },
   "project_panel": {
     "sticky_scroll": true,
-    "dock": "right"
+    "dock": "right",
   },
   "toolbar": {
     "breadcrumbs": true,
     "quick_actions": false,
-    "selections_menu": false
+    "selections_menu": false,
   },
   "telemetry": {
     "metrics": false,
-    "diagnostics": false
+    "diagnostics": false,
   },
   "tab_bar": {
     "show": true,
-    "show_tab_bar_buttons": false
+    "show_tab_bar_buttons": false,
   },
   "indent_guides": {
     "enabled": true,
-    "coloring": "indent_aware"
+    "coloring": "indent_aware",
     // "background_coloring": "indent_aware"
   },
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "wrap_guides": [80, 120],
   "vim": {
     "toggle_relative_line_numbers": true,
     "use_system_clipboard": "always",
-    "highlight_on_yank_duration": 350
+    "highlight_on_yank_duration": 350,
   },
 
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
-          "liquid": "html"
-        }
-      }
+          "liquid": "html",
+        },
+      },
     },
     "discord": {
       "initialization_options": {
@@ -111,18 +111,18 @@
           "large_image": "{base_icons_url}/zed.png",
           "large_text": "Zed",
           "small_image": "{base_icons_url}/idle.png",
-          "small_text": "Idle"
+          "small_text": "Idle",
         },
 
         // Rules to disable presence in specific workspaces
         "rules": {
           "mode": "blacklist", // Can also be "whitelist"
-          "paths": ["absolute path"]
+          "paths": ["absolute path"],
         },
 
-        "git_integration": true
-      }
-    }
+        "git_integration": true,
+      },
+    },
   },
   "languages": {
     "Liquid": {
@@ -130,10 +130,10 @@
         "allowed": true,
         "plugins": [
           "@shopify/prettier-plugin-liquid",
-          "prettier-plugin-tailwindcss"
-        ]
+          "prettier-plugin-tailwindcss",
+        ],
       },
-      "language_servers": ["tailwindcss-language-server", "..."]
-    }
-  }
+      "language_servers": ["tailwindcss-language-server", "..."],
+    },
+  },
 }

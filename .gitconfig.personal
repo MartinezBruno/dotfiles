@@ -3,7 +3,7 @@ email = bmartinez.fullstack@gmail.com
 name = Bruno Martinez
 
 [github]
-user = "MartinezBruno"
+user = "MartinezBruno" #must be in quotes
 
 [core]
 sshCommand = "ssh -i ~/.ssh/martinezbruno"

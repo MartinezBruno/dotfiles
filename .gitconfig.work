@@ -3,7 +3,7 @@ email = bruno@dango.digital
 name = Bruno Martinez
 
 [github]
-user = "BrunoM02"
+user = "BrunoM02" #must be in quotes
 
 [core]
 sshCommand = "ssh -i ~/.ssh/brunom02"
