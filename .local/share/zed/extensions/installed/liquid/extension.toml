@@ -1,0 +1,30 @@
+id = "liquid"
+name = "Liquid"
+version = "0.6.1"
+schema_version = 1
+description = "Shopify Liquid support"
+repository = "https://github.com/TheBeyondGroup/zed-shopify-liquid"
+authors = ["Jeffrey Guenther <guenther.jeffrey@gmail.com>"]
+themes = []
+icon_themes = []
+languages = ["languages/liquid"]
+capabilities = []
+
+[lib]
+kind = "Rust"
+version = "0.7.0"
+
+[grammars.liquid]
+repository = "https://github.com/hankthetank27/tree-sitter-liquid"
+rev = "fa11c7ba45038b61e03a8a00ad667fb5f3d72088"
+
+[language_servers.liquid]
+languages = ["Liquid"]
+
+[language_servers.liquid.language_ids]
+
+[context_servers]
+
+[agent_servers]
+
+[slash_commands]

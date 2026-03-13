@@ -1,0 +1,24 @@
+id = "liquid-snippets"
+name = "Shopify Liquid snippets"
+version = "0.0.2"
+schema_version = 1
+description = "A collection of useful snippets for Shopify Theme development."
+repository = "https://github.com/hcmlopes/zed-liquid-snippets"
+authors = ["Henrique Lopes <hcmlopes@gmail.com>"]
+themes = []
+icon_themes = []
+languages = []
+snippets = "./snippets/liquid.json"
+capabilities = []
+
+[lib]
+
+[grammars]
+
+[language_servers]
+
+[context_servers]
+
+[slash_commands]
+
+[indexed_docs_providers]

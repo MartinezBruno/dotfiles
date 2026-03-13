@@ -1,0 +1,353 @@
+{
+  "extensions": {
+    "catppuccin-icons": {
+      "manifest": {
+        "id": "catppuccin-icons",
+        "name": "Catppuccin Icons",
+        "version": "1.23.1",
+        "schema_version": 1,
+        "description": "🦊 Soothing pastel icons for Zed",
+        "repository": "https://github.com/catppuccin/zed-icons",
+        "authors": [
+          "Catppuccin <releases@catppuccin.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [
+          "icon_themes/catppuccin-icons.json"
+        ],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "claude-code-inspired-dark": {
+      "manifest": {
+        "id": "claude-code-inspired-dark",
+        "name": "Claude Code Inspired Dark",
+        "version": "1.0.0",
+        "schema_version": 1,
+        "description": "A dark theme for Zed inspired by Claude and Anthropic's brand colors with semi-transparent backgrounds.",
+        "repository": "https://github.com/ericbuess/claude-code-inspired-dark",
+        "authors": [
+          "Eric Buess"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/claude-code-inspired-dark.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "git-firefly": {
+      "manifest": {
+        "id": "git-firefly",
+        "name": "Git Firefly",
+        "version": "0.1.3",
+        "schema_version": 1,
+        "description": "Provides Git Syntax Highlighting",
+        "repository": "https://github.com/d1y/git_firefly",
+        "authors": [
+          "d1y <chenhonzhou@gmail.com>",
+          "Peter Tripp <petertripp@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/gitattributes",
+          "languages/gitignore",
+          "languages/gitconfig",
+          "languages/gitrebase"
+        ],
+        "grammars": {
+          "git_config": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-config",
+            "rev": "9c2a1b7894e6d9eedfe99805b829b4ecd871375e",
+            "path": null
+          },
+          "git_rebase": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-rebase",
+            "rev": "d8a4207ebbc47bd78bacdf48f883db58283f9fd8",
+            "path": null
+          },
+          "gitattributes": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-gitattributes",
+            "rev": "41940e199ba5763abea1d21b4f717014b45f01ea",
+            "path": null
+          },
+          "gitignore": {
+            "repository": "https://github.com/shunsambongi/tree-sitter-gitignore",
+            "rev": "f4685bf11ac466dd278449bcfe5fd014e94aa504",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "html": {
+      "manifest": {
+        "id": "html",
+        "name": "HTML",
+        "version": "0.3.0",
+        "schema_version": 1,
+        "description": "HTML support.",
+        "repository": "https://github.com/zed-industries/zed",
+        "authors": [
+          "Isaac Clayton <slightknack@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.7.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/html"
+        ],
+        "grammars": {
+          "html": {
+            "repository": "https://github.com/tree-sitter/tree-sitter-html",
+            "rev": "bfa075d83c6b97cd48440b3829ab8d24a2319809",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "vscode-html-language-server": {
+            "language": "HTML",
+            "languages": [],
+            "language_ids": {
+              "CSS": "css",
+              "HTML": "html"
+            },
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "liquid": {
+      "manifest": {
+        "id": "liquid",
+        "name": "Liquid",
+        "version": "0.6.1",
+        "schema_version": 1,
+        "description": "Shopify Liquid support",
+        "repository": "https://github.com/TheBeyondGroup/zed-shopify-liquid",
+        "authors": [
+          "Jeffrey Guenther <guenther.jeffrey@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.7.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/liquid"
+        ],
+        "grammars": {
+          "liquid": {
+            "repository": "https://github.com/hankthetank27/tree-sitter-liquid",
+            "rev": "fa11c7ba45038b61e03a8a00ad667fb5f3d72088",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "liquid": {
+            "language": null,
+            "languages": [
+              "Liquid"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "liquid-snippets": {
+      "manifest": {
+        "id": "liquid-snippets",
+        "name": "Shopify Liquid snippets",
+        "version": "0.0.2",
+        "schema_version": 1,
+        "description": "A collection of useful snippets for Shopify Theme development.",
+        "repository": "https://github.com/hcmlopes/zed-liquid-snippets",
+        "authors": [
+          "Henrique Lopes <hcmlopes@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": "./snippets/liquid.json",
+        "capabilities": []
+      },
+      "dev": false
+    }
+  },
+  "themes": {
+    "Claude Code Inspired Dark": {
+      "extension": "claude-code-inspired-dark",
+      "path": "themes/claude-code-inspired-dark.json"
+    }
+  },
+  "icon_themes": {
+    "Catppuccin Frappé": {
+      "extension": "catppuccin-icons",
+      "path": "icon_themes/catppuccin-icons.json"
+    },
+    "Catppuccin Latte": {
+      "extension": "catppuccin-icons",
+      "path": "icon_themes/catppuccin-icons.json"
+    },
+    "Catppuccin Macchiato": {
+      "extension": "catppuccin-icons",
+      "path": "icon_themes/catppuccin-icons.json"
+    },
+    "Catppuccin Mocha": {
+      "extension": "catppuccin-icons",
+      "path": "icon_themes/catppuccin-icons.json"
+    }
+  },
+  "languages": {
+    "Git Attributes": {
+      "extension": "git-firefly",
+      "path": "languages/gitattributes",
+      "matcher": {
+        "path_suffixes": [
+          "gitattributes",
+          ".gitattributes"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gitattributes"
+    },
+    "Git Config": {
+      "extension": "git-firefly",
+      "path": "languages/gitconfig",
+      "matcher": {
+        "path_suffixes": [
+          "config.worktree",
+          ".gitconfig",
+          ".gitmodules",
+          ".lfsconfig"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_config"
+    },
+    "Git Ignore": {
+      "extension": "git-firefly",
+      "path": "languages/gitignore",
+      "matcher": {
+        "path_suffixes": [
+          ".containerignore",
+          ".cursorignore",
+          ".dockerignore",
+          ".eslintignore",
+          ".fdignore",
+          ".gitignore",
+          ".git-blame-ignore-revs",
+          ".ignore",
+          ".npmignore",
+          ".prettierignore",
+          ".rgignore",
+          ".vscodeignore"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gitignore"
+    },
+    "Git Rebase": {
+      "extension": "git-firefly",
+      "path": "languages/gitrebase",
+      "matcher": {
+        "path_suffixes": [
+          "git-rebase-todo"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_rebase"
+    },
+    "HTML": {
+      "extension": "html",
+      "path": "languages/html",
+      "matcher": {
+        "path_suffixes": [
+          "html",
+          "htm",
+          "shtml"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "html"
+    },
+    "Liquid": {
+      "extension": "liquid",
+      "path": "languages/liquid",
+      "matcher": {
+        "path_suffixes": [
+          "liquid"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "liquid"
+    }
+  }
+}
